@@ -195,8 +195,18 @@
       </footer>
 
     </main>
+    
+    <script>
+  document.addEventListener("DOMContentLoaded", function() {
+    var video = document.getElementById("videoFondo");
+    video.play().catch(function(error) {
+      console.log("Autoplay bloqueado");
+    });
+  });
+</script>
 
     <!-- Archivo JS de Bootstrap -->
     <script src="bootstrap.bundle.min.js"></script>
+    
   </body>
 </html>
